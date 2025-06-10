@@ -1,3 +1,5 @@
+import React from "react";
+
 const luana = {
   cliente: "Luana",
   idade: 27,
