@@ -40,7 +40,7 @@ const App3 = () => {
           <p>{preco}</p>
           <ul>
             {cores.map((cor) => (
-              <li key={cor} style={{ color: cor }}>
+              <li key={cor} style={{ backgroundColor: cor, color: "white" }}>
                 {cor}
               </li>
             ))}
