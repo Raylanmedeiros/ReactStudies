@@ -51,4 +51,8 @@ const App3 = () => {
   );
 };
 
+// This component filters products based on their price and displays them
+// along with their available colors. Each product is rendered with its name,
+// price, and a list of color options.
+
 export default App3;
