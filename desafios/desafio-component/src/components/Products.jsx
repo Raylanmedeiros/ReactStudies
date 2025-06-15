@@ -2,15 +2,28 @@ import React from "react";
 import Produtos from "../Pages/Produtos";
 
 const produtos = [
-  { nome: 'Notebook', propriedades: ['16gb ram', '512gb'] },
-  { nome: 'Smartphone', propriedades: ['2gb ram', '128gb'] },
+  { nome: "Notebook", propriedades: ["16gb ram", "512gb"] },
+  { nome: "Smartphone", propriedades: ["2gb ram", "128gb"] },
 ];
 
 const Products = () => {
-    dados = Produtos
-  return <div>
-    teste
-  </div>;
+  return (
+    <div>
+      {produtos.map(({ nome, propriedades }) => (
+        <div
+          key={nome}
+          style={{ border: "1px solid black", padding: "10px", margin: "10px" }}
+        >
+          <ul>
+            <p>{nome}</p>
+            {propriedades.map((propriedade) => (
+              <li key={propriedade}>{propriedade}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Products;

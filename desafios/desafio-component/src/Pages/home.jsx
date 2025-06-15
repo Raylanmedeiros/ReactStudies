@@ -1,7 +1,13 @@
 import React from "react";
+import Titulo from "../components/Titulo";
 
-const home = () => {
-  return <div>Olá, Mundo</div>;
+const Home = () => {
+  return (
+    <section>
+      <Titulo texto="Home" />
+      <p>Essa é a página inicial.</p>
+    </section>
+  );
 };
 
-export default home;
+export default Home;
