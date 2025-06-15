@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/header.jsx";
+import Header from "./components/Header.jsx";
 import Produtos from "./Pages/Produtos.jsx";
 import Home from "./Pages/home.jsx";
 

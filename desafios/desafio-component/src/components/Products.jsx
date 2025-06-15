@@ -14,8 +14,8 @@ const Products = () => {
           key={nome}
           style={{ border: "1px solid black", padding: "10px", margin: "10px" }}
         >
+          <p>{nome}</p>
           <ul>
-            <p>{nome}</p>
             {propriedades.map((propriedade) => (
               <li key={propriedade}>{propriedade}</li>
             ))}

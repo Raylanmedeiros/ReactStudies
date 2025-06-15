@@ -5,11 +5,12 @@ import App2 from "./App2.jsx";
 import App3 from "./App3.jsx";
 import App4 from "./App4.jsx";
 import Form from "./Form/Form.jsx";
+import States from "./states.jsx";
 
 createRoot(document.getElementById("root")).render(
   <>
     <h1>Exercícios das aulas em um único arquivo</h1>
-    <App />
+    {/* <App />
     <hr />
     <App2 />
     <hr />
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
     <hr />
     <App4 />
     <hr />
-    <Form />
+    <Form /> */}
+    <States />
   </>
 );
