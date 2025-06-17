@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Products from "../components/Products";
+import Titulo from "../components/Titulo";
 
 const Produtos = () => {
   return (
-    <div>Produtos</div>
-  )
-}
+    <div>
+      <Titulo texto="Produtos" />
+      <Products />
+    </div>
+  );
+};
 
-export default Produtos
+export default Produtos;

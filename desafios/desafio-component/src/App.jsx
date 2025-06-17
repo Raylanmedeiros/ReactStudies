@@ -1,13 +1,19 @@
 import React from "react";
-import Header from "./components/header.jsx";
-import Products from "./components/Products.jsx";
+import Header from "./components/Header.jsx";
 import Produtos from "./Pages/Produtos.jsx";
+import Home from "./Pages/home.jsx";
 
 const App = () => {
+  let Page = <Home />;
+
+  if (window.location.pathname == "/produtos") {
+    Page = <Produtos />;
+  }
+
   return (
     <>
       <Header />
-      <Produtos />
+      {Page}
     </>
   );
 };
